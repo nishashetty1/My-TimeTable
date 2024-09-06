@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My TimeTable Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>My TimeTable Generator</h1>
+    <form id="preferences-form">
+        <label>
+            Preferred time slot:
+            <select name="preferred-slot" required>
+                <option value="morning">Morning</option>
+                <option value="afternoon">Afternoon</option>
+            </select>
+        </label>
+        <label>
+            First choice for day off:
+            <select name="day-off-1" required>
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+            </select>
+        </label>
+        <label>
+            Second choice for day off:
+            <select name="day-off-2" required>
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+            </select>
+        </label>
+        <input type="submit" value="Build My TimeTable">
+    </form>
+
+    <div id="timetables"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
